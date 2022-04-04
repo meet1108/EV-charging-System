@@ -81,66 +81,39 @@
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</header>
-	<label for="">CALENDER</label>
-	<input type="date">
+	
+	
   <div class="container">
     <ul class="list">
 
     </ul>    
   </div>
+
+
+
   <footer class="footer-section">
-		<div class="container">
-			<!-- <div class="row">
-				<div class="col-xl-6 col-lg-7 order-lg-2">
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="footer-widget">
-								<h2>About us</h2>
-								<ul>
-									<li><a href="">Our Story</a></li>
-									<li><a href="">Sol Music Blog</a></li>
-									<li><a href="">History</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="footer-widget">
-								<h2>Products</h2>
-								<ul>
-									<li><a href="">Music</a></li>
-									<li><a href="">Subscription</a></li>
-									<li><a href="">Custom Music</a></li>
-									<li><a href="">Footage</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="footer-widget">
-								<h2>Playlists</h2>
-								<ul>
-									<li><a href="">Newsletter</a></li>
-									<li><a href="">Careers</a></li>
-									<li><a href="">Press</a></li>
-									<li><a href="">Contact</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div> -->
-				<div class="col-xl-6 col-lg-5 order-lg-1">
-					<img src="../Login_SignUp/IMG/final_logo.png" style="padding: 10px;" width="160px" height="110px" alt="">
+	<div class="container1">
+		
+		<P align = " Center "   ><Font color="white" size = "20">C O N T A C T &nbsp  U S</font></Font></P>
+		<p align = " Center ">Tel: +91 1234567890</p>
+		<p align = "Center" >Address: Charotar University of Science and Technology, Nadiad - Petlad Rd, Highway, Changa, Gujarat 388421</p>
+			 
+		<div class="col-xl-6 col-lg-5 order-lg-1" id="ss" style="margin-left:400px;">
+				
+				
+				<div align = "center" class="social-links">
 					
-					<div class="social-links">
-						<a href=""><i class="fa fa-instagram"></i></a>
-						<a href=""><i class="fa fa-pinterest"></i></a>
-						<a href=""><i class="fa fa-facebook"></i></a>
-						<a href=""><i class="fa fa-twitter"></i></a>
-						<a href=""><i class="fa fa-youtube"></i></a>
-					</div>
+					<a href=""><i class="fa fa-instagram"></i></a>
+					<a href=""><i class="fa fa-pinterest"></i></a>
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+					<a href=""><i class="fa fa-youtube"></i></a>
+				
 				</div>
 			</div>
 		</div>
-	</footer>
+	</div>
+</footer>
 </body>
 
 
@@ -177,7 +150,7 @@ const clickSeat = (no, el) => {
  // localStorage.removeItem('seats');
   localStorage.setItem('seats', localSeats);
   el.style.backgroundColor = 'green';
-  localSeats[no] == 'true' ? window.open('#', '_blank') : '/';
+  localSeats[no] == 'true' ? window.open('v_details.html', '_blank') : '/';
 }
 
 const handleArrow = (no, el) => {

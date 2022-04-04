@@ -21,7 +21,7 @@
 		<div class="image-holder">
 			<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_c21tPU/electric-car-lottie-illustradraw-download.json"  background="transparent"  speed="1"  style="width: 700px; height: 700px;"  loop  autoplay></lottie-player>
 		</div>
-		<form action="connectsignup.php" method="post" >
+		<form method="post" >
 			<div id="wizard" style="background: #fff;">
 				<!-- SECTION 1 -->
 				<h4></h4>
@@ -37,7 +37,7 @@
 							<label for="">
 								Last Name *
 							</label>
-							<input type="text" class="form-control"id ="lastname" name="lastname">
+							<input type="text" class="form-control" id="lastname" name="lastname">
 						</div>
 					</div>
 
@@ -45,25 +45,25 @@
 						<label for="">
 							Email Address *
 						</label>
-						<input type="text" class="form-control"id ="email" name="email">
+						<input type="text" class="form-control" id="email" name="email">
 					</div>
 					<div class="form-holder" style="margin-top: 27px;">
 						<label for="">
 							Password *
 						</label>
-						<input type="password" class="form-control"id ="password" name="password">
+						<input type="password" class="form-control" id="password" name="password">
 					</div>
 					<div class="form-holder" style="margin-top: 27px;">
 						<label for="">
 							Confirm Password *
 						</label>
-						<input type="password" class="form-control">
+						<input type="password" class="form-control" id="confrimpassword">
 					</div>
 					<div class="form-holder" style="margin-top: 27px;">
 						<label for="">
 							Phone *
 						</label>
-						<input type="text" class="form-control"id ="number" name="number">
+						<input type="text" class="form-control"id="phone" name="number" >
 					</div>
 
 					
@@ -76,35 +76,30 @@
 						<label for="">
 							County *
 						</label>
-						<input type="text" class="form-control"id ="firstname" name="">
+						<input type="text" class="form-control" name="country" id="country">
 					</div>
 					<div class="form-row">
 						<label for="">
 							Postcode / Zip *
 						</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" id="postcode">
 					</div>
 					<div class="form-row">
 						<label for="">
 							Address *
 						</label>
-						<input type="text" class="form-control" placeholder="Street address"
-							style="margin-bottom: 20px">
-						<input type="text" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
+						<input type="textarea" cols="3" rows="4" class="form-control" placeholder="Street address"
+							style="margin-bottom: 20px" id="address">						
 					</div>
 					<div class="form-row">
 						<label for="">
 							Town / City *
 						</label>
-						<input type="text" class="form-control" required>
+						<input type="text" class="form-control" required id="city">
 					</div>
 
-					<div class="checkbox">
-						<label>
-							<input type="checkbox" checked> Create an account?
-							<span class="checkmark"></span>
-					
-						</label>
+					<div class="checkbox">						
+						<button id="signupUser">Sign up</button>
 						<label style=" position: relative; left: 80px;">	 
 						<a href="../Login_SignUp/Login/login.html">Already have an Account?</a>	
 					</label>
@@ -112,7 +107,6 @@
 					</div>
 					
 				</section>
-
 			</div>
 		</form>
 	</div>

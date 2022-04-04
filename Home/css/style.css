@@ -92,11 +92,9 @@ Helper CSS
 
 .section-title {
 	margin-bottom: 60px;
+	
 }
 
-.section-title h2 {
-	font-size: 60px;
-}
 
 .set-bg {
 	background-repeat: no-repeat;
@@ -629,11 +627,18 @@ Responsive
 }
 
 .social-links a {
+	
+	text-align: center;
 	display: inline-block;
 	color: #6a7080;
 	font-size: 18px;
 	margin-right: 35px;
+	
 }
+#ss{
+	margin-left: 300px;
+}
+
 
 /* ----------------
 Other pages
@@ -1829,4 +1834,89 @@ Responsive
 		position: relative;
 		margin-top: 20px;
 	}
+}
+
+
+
+/*vehical detailes*/
+
+
+.vd {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.details ul{
+	display: flex;
+	gap: 80px;
+}
+.details ul li {
+	list-style-type: none;
+	margin-top: 25px;
+}
+.details input {
+	border-radius: 5px;
+	padding: 15px;
+	width: 300px;
+	height: 50px;
+}
+.v_type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+
+}
+.rd{
+	margin: 20px;
+}
+.s-and-p{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 80px;
+	margin-bottom: 50px;
+}
+.s-and-p .v1 input ,.v2 input{
+	
+	border-radius: 5px;
+	padding: 15px;
+	width: 300px;
+	height: 50px;
+}
+
+/*Thread Pump*/
+.t-pump{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+}
+.f-cont {
+	margin-bottom: 25px;
+}
+.t-pump .f-cont a{
+	margin: 25px;
+}
+
+/*img*/
+.section-title h2{
+	font-size: 60px;
+	
+
+}
+.img-1 {
+	position: absolute;
+	/* margin: 0 auto; */
+	left: 1000px;
+	width: 100px;
+	z-index: -1;
+}
+.img-over{
+	z-index: 1;
+	position: relative;
+
 }
