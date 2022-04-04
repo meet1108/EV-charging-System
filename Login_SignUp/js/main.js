@@ -50,42 +50,6 @@ $(function(){
         $('.checkbox-circle label').removeClass('active');
         $(this).addClass('active');
     })
-
-    $('#signupUser').click(function(){
-        
-        var firstname = document.getElementById('firstname').value;
-        var lastname = document.getElementById('lastname').value;
-        var emailaddress = document.getElementById('email').value;
-        var password = document.getElementById('password').value;
-        var confrimpassword = document.getElementById('confrimpassword').value;
-        var phonenumber = document.getElementById('phone').value;
-        var country = document.getElementById('country').value;
-        var postcode = document.getElementById('postcode').value;
-        var address = document.getElementById('address').value;
-        var city = document.getElementById('city').value;
-        $.ajax({
-            url: "../Login_Signup/database/saveData.php",
-            type: "POST",
-            data: {                
-                firstname:firstname,
-                lastname:lastname,
-                emailaddress:emailaddress,
-                password:password,
-                confrimpassword:confrimpassword,
-                phone:phonenumber,
-                country:country,
-                postcode:postcode,
-                address:address,
-                city:city
-            },success:function(data){
-                window.location = "../Login_SignUp/Login/login.php";
-            },error:function(err){
-                alert("failed");
-            }
-        })
-    })
-
-    
 })
 
 
